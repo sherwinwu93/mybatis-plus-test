@@ -2,4 +2,4 @@
 1. 定义SQL: MysqlInsertAllBatch extends AbstractMethod
 2. 注册到Injector: MyLocalSqlInject extends DefaultSqlInjector
 3. 方法定义到BaseMapper: MyBaseMapper
-4. 把自定义的Injector注册到Spring: @Bean
+4. 配置Injector到Spring: @Bean
