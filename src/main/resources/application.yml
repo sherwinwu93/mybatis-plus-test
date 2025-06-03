@@ -1,0 +1,10 @@
+# DataSource Config
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    username: root
+    password: test
+  sql:
+    init:
+      schemaLocations: classpath:db/schema-h2.sql
+      dataLocations: classpath:db/data-h2.sql
