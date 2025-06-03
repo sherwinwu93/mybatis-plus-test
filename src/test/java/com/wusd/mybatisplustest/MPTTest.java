@@ -16,4 +16,17 @@ public class MPTTest {
         SysUser user = userMapper.selectById(1);
         System.out.println("-----------------test...user->" + user);
     }
+
+    @Test
+    public void testMyInsertAll() {
+        SysUser user = new SysUser();
+        user.setId(6L);
+        user.setName("Wusd");
+        user.setAge(3);
+        user.setEmail("wsd@foxmail.com");
+        userMapper.myInsertAll(user);
+
+        SysUser result = userMapper.selectById(6L);
+        System.out.println("------------------------" +  result);
+    }
 }
