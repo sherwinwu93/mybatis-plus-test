@@ -4,19 +4,16 @@ import com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor;
 import com.wusd.mybatisplustest.utils.MapUtils;
 import com.wusd.mybatisplustest.utils.ReflectionUtils;
 import io.micrometer.common.util.StringUtils;
-import jakarta.annotation.Resource;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.lang.reflect.Method;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
