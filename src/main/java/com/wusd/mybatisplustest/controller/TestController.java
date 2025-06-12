@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/test")
 public class TestController {
@@ -18,8 +16,11 @@ public class TestController {
     private ProductMapper mapper;
     @GetMapping
     public ResponseEntity test() {
-        List<Product> products = mapper.queryAll();
-
-        return ResponseEntity.ok(products);
+        Product product = mapper.selectById(1L);
+        Product o = new Product();
+        o.setProductId(product.getProductId());
+        o.setCreator("wusd2");
+        mapper.updateById(o);
+        return ResponseEntity.ok(o);
     }
 }
