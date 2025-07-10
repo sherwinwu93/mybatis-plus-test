@@ -21,7 +21,6 @@ public class MPTTest {
     public void testMyInsertAll() {
         SysUser user = new SysUser();
         user.setId(6L);
-        user.setName("Wusd");
         user.setAge(3);
         user.setEmail("wsd@foxmail.com");
         userMapper.myInsertAll(user);
