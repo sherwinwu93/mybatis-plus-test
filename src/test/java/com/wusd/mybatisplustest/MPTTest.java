@@ -1,7 +1,6 @@
 package com.wusd.mybatisplustest;
 
 import com.wusd.mybatisplustest.entity.SysUser;
-import com.wusd.mybatisplustest.mapper.SysUserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

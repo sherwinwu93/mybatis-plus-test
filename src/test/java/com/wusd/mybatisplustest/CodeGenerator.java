@@ -39,13 +39,13 @@ public class CodeGenerator {
                         .parent("com.wusd.mybatisplustest")
                         .entity("entity.po")
                         .mapper("mapper")
-                        .service("service")
-                        .serviceImpl("service.impl")
-                        .xml("mapper.xml")
+                        .serviceImpl("service")
+                        .xml("mapper")
                 )
                 .strategyConfig(builder -> builder
                         .entityBuilder()
                         .enableLombok()
+                        .enableFileOverride()
                 )
                 .templateEngine(new FreemarkerTemplateEngine())
                 .execute();
